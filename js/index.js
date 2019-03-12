@@ -46,7 +46,7 @@ ctaLogo.src = siteContent["cta"]["img-src"];
 
 let aNav = document.querySelectorAll('nav a');
 aNav.forEach( (a,i) => a.textContent = siteContent['nav'][`nav-item-${++i}`]);
-// aNav.style.color = 'green';
+aNav.forEach((link,i) => link.style.color = "green");
 
 let ctaH1 = document.querySelector('section div h1');
 ctaH1.textContent = (siteContent["cta"]["h1"]);
